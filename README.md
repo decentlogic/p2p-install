@@ -21,7 +21,8 @@ chmod +x install.sh
 ```
 ./install.sh
 ```
-## 2. Install the Solana CLI
+## 2. Install the Solana CLI 
+For more info about solana installation refer: https://solana.com/developers/guides/getstarted/setup-local-development
 ```
 sh -c "$(curl -sSfL https://release.solana.com/beta/install)"
 ```
@@ -77,7 +78,7 @@ solana balance
 
 ## 6. Open another terminal and run, to deploy the p2p program to local block chain
 ```
-npm run deploy
+solana program deploy ~/.p2p/program/p2p_pg.so
 ```
 
 ### Once the deploy is successful, execute the p2p cli
